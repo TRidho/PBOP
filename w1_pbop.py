@@ -1,5 +1,5 @@
 #5210411208_MUHAMMAD TAUFIK RIDHO
-#Menentukan Luas Segitiga
+#Menghitung Luas Segitiga
 print("Menghitung Luas Segitiga")
 alas=float(input("Alas : "))
 tinggi =float(input("Tinggi : "))
