@@ -5,5 +5,4 @@ alas=float(input("Alas : "))
 tinggi =float(input("Tinggi : "))
 
 luas = 1/2*alas*tinggi
-
 print("Luas Segitiga =", luas)
