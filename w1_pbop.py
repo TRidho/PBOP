@@ -1,5 +1,5 @@
 #5210411208_MUHAMMAD TAUFIK RIDHO
-#Menghitung Luas Segitiga
+#Menghitung Luas dan Keliling Segitiga
 while True :
     print("---Menu---")
     print("1.Menghitung Luas Segitiga.")
