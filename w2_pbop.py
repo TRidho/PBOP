@@ -181,3 +181,50 @@ t2.count(10)
 #36.set
 set={1,2,3}
 print(set)
+
+#37.membuat set dengan fungsi set
+set_2 = set([1,2,3])
+print(set_2)
+
+#38.membuat set kosong harus menggunakan fungsi set
+set_3 = set()
+print(set_3)
+
+#39.membuat set dengan data campuran
+set_4 = {'aku', 'belajar', 'python', 3.0, 1, 3, 4}
+print(set_4)
+
+#40.mengubah list ke set
+list_1 = [1, 2, 3, 4, 5]
+set_5 = set(list_1)
+print(set_5)
+
+#41.meengubah tuple ke set
+tuple_1 = (1, 2, 3, 4, 5)
+set_6 = set(tuple_1)
+print(set_6)
+
+#42.menambahkan satu persatu anggota ke dalam set.
+set_7 = {1, 2, 3}
+set_7.add(4)
+set_7.add('lima')
+print(set_7)
+
+#43.menambahkan banyak anggota sekaligus
+set_8 = {1, 2, 3}
+set_8.update(['Satu', 'Dua', 'Tiga', 4, 5, 6])
+print(set_8)
+
+#44.menghapus set dengan fungsi remove(nilai set).
+set_10 = {1, 3, 5, 7}
+set_10.remove(5)
+print(set_10)
+
+#45.menghapus set dengan fungsi discard(nilai set)
+set_11 = {1, 3, 5, 7, 9}
+set_11.discard(2)
+print(set_11)
+
+#46.set Tidak bisa mengakses index.
+set_15 = {1, 2, 3, 4, 5}
+print(set_15[3])
