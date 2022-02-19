@@ -182,49 +182,59 @@ t2.count(10)
 set={1,2,3}
 print(set)
 
-#37.membuat set dengan fungsi set
-set_2 = set([1,2,3])
+#37.membuat set dengan data campuran
+set_2 = {'aku', 'belajar', 'python', 3.0, 1, 3, 4}
 print(set_2)
 
-#38.membuat set kosong harus menggunakan fungsi set
-set_3 = set()
+#38.menambahkan satu persatu anggota ke dalam set.
+set_3 = {1, 2, 3}
+set_3.add(4)
+set_3.add('lima')
 print(set_3)
 
-#39.membuat set dengan data campuran
-set_4 = {'aku', 'belajar', 'python', 3.0, 1, 3, 4}
+#39.menambahkan banyak anggota sekaligus
+set_4 = {1, 2, 3}
+set_4.update(['Satu', 'Dua', 'Tiga', 4, 5, 6])
 print(set_4)
 
-#40.mengubah list ke set
-list_1 = [1, 2, 3, 4, 5]
-set_5 = set(list_1)
+#40.menghapus set dengan fungsi remove(nilai set).
+set_5 = {1, 3, 5, 7}
+set_5.remove(5)
 print(set_5)
 
-#41.meengubah tuple ke set
-tuple_1 = (1, 2, 3, 4, 5)
-set_6 = set(tuple_1)
+#41.menghapus set dengan fungsi discard(nilai set)
+set_6 = {1, 3, 5, 7, 9}
+set_6.discard(2)
 print(set_6)
 
-#42.menambahkan satu persatu anggota ke dalam set.
-set_7 = {1, 2, 3}
-set_7.add(4)
-set_7.add('lima')
-print(set_7)
+#42.set Tidak bisa mengakses index.
+set_7 = {1, 2, 3, 4, 5}
+print(set_7[3])
 
-#43.menambahkan banyak anggota sekaligus
-set_8 = {1, 2, 3}
-set_8.update(['Satu', 'Dua', 'Tiga', 4, 5, 6])
-print(set_8)
+#43.perasi Gabungan
+data1 = {10, 2, 3.5, 4, 5.5}
+data2 = {1.0, 0.2, 3.0, 8, 6.5}
+print(data1 | data2) # Menggunakan tanda tegak lurus
+print(data1.union(data2)) 
+print(data2.union(data1))
 
-#44.menghapus set dengan fungsi remove(nilai set).
-set_10 = {1, 3, 5, 7}
-set_10.remove(5)
-print(set_10)
+#44.0perasi Irisan
+data1 = {10, 2, 3.5, 4, 5.5}
+data2 = {1.0, 0.2, 3.0, 8, 6.5}
+print(data1 & data2) # Menggunakan tanda '&'
+print(data1.intersection(data2)) 
+print(data2.intersection(data1))
 
-#45.menghapus set dengan fungsi discard(nilai set)
-set_11 = {1, 3, 5, 7, 9}
-set_11.discard(2)
-print(set_11)
+#45.operasi Selisih
+data1 = {10, 2, 3.5, 4, 5.5}
+data2 = {1.0, 0.2, 3.0, 8, 6.5}
+print(data1 - data2) # Menggunakan tanda '-'
+print(data1.difference(data2))
+print(data2.difference(data1))
 
-#46.set Tidak bisa mengakses index.
-set_15 = {1, 2, 3, 4, 5}
-print(set_15[3])
+#46.operasi Selisih
+data1 = {10, 2, 3.5, 4, 5.5}
+data2 = {1.0, 0.2, 3.0, 8, 6.5}
+print(data1 ^ data2) # Menggunakan tanda '^'
+print(data1.symmetric_difference(data2))
+print(data2.symmetric_difference(data1))
