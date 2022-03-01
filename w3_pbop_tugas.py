@@ -14,7 +14,7 @@ mnm4 = MenuMinuman( 'Jus Mangga','Jus mangga ',17500)
 mnm5 = MenuMinuman( 'Jus Tomat','Jus Tomat dengan tambahan gula',8500)
 mnm6 = MenuMinuman( 'Red & Smooth', 'Smoothie pisang susu dengan strawberry',17500)
 
-pilihan_minuman = (mnm1,mnm2,mnm3,mnm4)
+pilihan_minuman = (mnm1,mnm2,mnm3,mnm4,mnm5,mnm6)
 print( 'Daftar menu Healthy Fruits :')
 for mn in pilihan_minuman:
     t = '{} harga Rp {}, {}'.format(mn.nama,mn.harga,mn.deskripsi)
