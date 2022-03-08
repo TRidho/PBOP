@@ -76,6 +76,7 @@ class Truk(Mobil) :
 truk = Truk(4, 4, "Disel", "Bak Terbuka")
 print(truk._mesin)
 print(truk.tipebak)
+
 #6 semua variabel bersifat privat
 class Mobil() :
     def __init__(self, jendela, pintu, mesin) :
